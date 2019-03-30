@@ -1,7 +1,7 @@
 extends RigidBody2D
 #Krokens svinghastighet
 export var force = 500
-export var offset = 50
+export var offset = 100
 
 var velocity = Vector2()
 
