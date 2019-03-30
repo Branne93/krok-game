@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/scripts/krok/RigidBody2D.gd" type="Script" id=1]
+[ext_resource path="res://images/krok.png" type="Texture" id=2]
+
+[node name="krok" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 50.0
+friction = 0.5
+bounce = 0.0
+gravity_scale = 4.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+script = ExtResource( 1 )
+force = 300
+offset = 50
+
+[node name="bild" type="Sprite" parent="RigidBody2D" index="0"]
+
+position = Vector2( -0.0305634, 0 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="hitbox" type="CollisionPolygon2D" parent="RigidBody2D" index="1"]
+
+visible = false
+position = Vector2( -0.0305634, 0 )
+build_mode = 0
+polygon = PoolVector2Array( 10.3448, -49.7372, 24.6804, -49.7372, 25.3797, -44.8421, 29.7503, -45.1918, 29.9251, -54.982, 19.9601, -55.1568, 19.6105, -64.9469, -19.8998, -64.7721, -19.8998, -54.8071, -30.0397, -54.6323, -29.69, -25.2618, -20.0855, -24.8057, -19.5159, -15.1228, -10.1178, -14.838, -10.1178, -5.01269, -5.13397, -4.87029, -4.74937, 14.6221, -0.00773621, 15.2075, 0.326134, 25.1884, 9.83602, 25.0598, 10.2216, 34.5697, 20.117, 35.2123, 20.374, 50.1197, 9.96454, 50.3767, 9.83602, 55.2602, -9.82632, 55.0031, -10.0833, 50.1197, -24.7337, 49.7342, -24.9907, 45.3647, -29.6172, 44.9792, -29.8742, 54.8746, -19.8503, 55.5172, -19.8503, 64.8986, 19.9885, 64.8986, 19.9885, 55.0031, 30.0124, 55.0031, 30.0124, 25.3169, 20.374, 25.1884, 19.4235, 15.1122, 5.2609, 15.2075, 4.69132, -14.838, -0.00773621, -14.9804, 0.257507, -24.6423, -9.49272, -24.6423, -10.2833, -34.9196, -19.77, -35.1831, -19.77, -49.9402, -10.0198, -49.6767, -9.58521, -54.8071, 9.99513, -54.8071 )
+_sections_unfolded = [ "Transform" ]
+
+

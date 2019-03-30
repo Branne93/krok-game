@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/Root.gd" type="Script" id=1]
+[ext_resource path="res://scenes/krok.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Spik.tscn" type="PackedScene" id=3]
+
+[node name="root" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+boost = 12000
+
+[node name="krok" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 151.926, 459.309 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="spik" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 156.436, 425.104 )
+scale = Vector2( 1.12027, 1.12027 )
+
+[node name="spik2" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 508.358, 427.824 )
+scale = Vector2( 1.12027, 1.12027 )
+
+
