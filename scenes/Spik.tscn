@@ -2,12 +2,12 @@
 
 [ext_resource path="res://images/spik.png" type="Texture" id=1]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( 0, -10, 8.66025, 5, -8.66025, 5 )
+radius = 10.5431
 
-[node name="spik" type="Node2D"]
+[node name="spik" type="Node2D" index="0"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
 
@@ -19,15 +19,15 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="hitbox" type="CollisionShape2D" parent="StaticBody2D" index="0"]
-
-position = Vector2( 0.0361411, 0.905713 )
-scale = Vector2( 0.637366, 0.729358 )
-shape = SubResource( 1 )
-
-[node name="bild" type="Sprite" parent="StaticBody2D" index="1"]
+[node name="bild" type="Sprite" parent="StaticBody2D" index="0"]
 
 position = Vector2( 0, -1.19209e-07 )
 texture = ExtResource( 1 )
+
+[node name="hitbox" type="CollisionShape2D" parent="StaticBody2D" index="1"]
+
+position = Vector2( -0.0632119, 0.460137 )
+scale = Vector2( 0.525964, 0.628044 )
+shape = SubResource( 1 )
 
 
