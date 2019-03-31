@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/Root.gd" type="Script" id=1]
 [ext_resource path="res://scenes/krok.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/Spik.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/resetarea.tscn" type="PackedScene" id=4]
 
 [node name="root" type="Node2D" index="0"]
 
@@ -24,5 +25,7 @@ scale = Vector2( 1.12027, 1.12027 )
 
 position = Vector2( 508.358, 427.824 )
 scale = Vector2( 1.12027, 1.12027 )
+
+[node name="resetarea" parent="." index="3" instance=ExtResource( 4 )]
 
 
